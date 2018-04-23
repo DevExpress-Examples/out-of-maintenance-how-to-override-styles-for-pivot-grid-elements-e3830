@@ -1,0 +1,28 @@
+﻿<Window xmlns:dxpg="http://schemas.devexpress.com/winfx/2008/xaml/pivotgrid"
+        xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+        xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="DXPivotGrid_OverrideElementStyles.MainWindow"
+        dx:ThemeManager.ThemeName="Office2010Black"
+        Height="600" Width="800"
+        Title="Main Window">
+    <Grid>
+        <dxpg:PivotGridControl Name="pivotGridControl1">
+            <dxpg:PivotGridControl.FieldHeaderContentStyle>
+                <Style TargetType="{x:Type TextBlock}">
+                    <Setter Property="Cursor" Value="UpArrow" />
+                    <Setter Property="Foreground" Value="#ffd189" />
+                    <Setter Property="Text" Value="{Binding DisplayText, StringFormat='{}({0})'}"/>
+                </Style>
+            </dxpg:PivotGridControl.FieldHeaderContentStyle>
+            <dxpg:PivotGridControl.Fields>
+                <dxpg:PivotGridField Name="fieldCustomer" FieldName="Sales Person" Area="RowArea"
+                                     Caption="Customer"/>
+                <dxpg:PivotGridField Name="fieldYear" FieldName="OrderDate" Area="ColumnArea"
+                                     Caption="Year" GroupInterval="DateYear"/>
+                <dxpg:PivotGridField Name="fieldQuantity" FieldName="Quantity" Area="DataArea"/>
+            </dxpg:PivotGridControl.Fields>
+        </dxpg:PivotGridControl>
+    </Grid>
+</Window>
