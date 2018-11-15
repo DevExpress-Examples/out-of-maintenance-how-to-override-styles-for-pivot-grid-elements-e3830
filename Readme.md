@@ -1,3 +1,8 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [MainWindow.xaml](./CS/DXPivotGrid_OverrideElementStyles/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/DXPivotGrid_OverrideElementStyles/MainWindow.xaml))
+<!-- default file list end -->
 # How to override styles for pivot grid elements
 
 
