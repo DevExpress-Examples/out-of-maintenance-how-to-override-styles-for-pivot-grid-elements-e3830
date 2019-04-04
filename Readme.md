@@ -1,7 +1,7 @@
 <!-- default file list -->
 *Files to look at*:
 
-* [MainWindow.xaml](./CS/DXPivotGrid_OverrideElementStyles/MainWindow.xaml) (VB: [MainWindow.xaml.vb](./VB/DXPivotGrid_OverrideElementStyles/MainWindow.xaml.vb))
+* [MainWindow.xaml](./CS/DXPivotGrid_OverrideElementStyles/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/DXPivotGrid_OverrideElementStyles/MainWindow.xaml))
 * [MainWindow.xaml.cs](./CS/DXPivotGrid_OverrideElementStyles/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/DXPivotGrid_OverrideElementStyles/MainWindow.xaml.vb))
 <!-- default file list end -->
 # How to override styles for pivot grid elements
